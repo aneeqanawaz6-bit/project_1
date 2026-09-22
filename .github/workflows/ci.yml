@@ -20,4 +20,4 @@ jobs:
         run: test -s index.html
 
       - name: HTML test
-        run: grep -qi "<html" index.html
+        run: grep -qi "<wrongtag" index.html
