@@ -15,3 +15,9 @@ jobs:
 
       - name: Check index.html
         run: test -f index.html
+
+      - name: Build check
+        run: test -s index.html
+
+      - name: HTML test
+        run: grep -qi "<html" index.html
